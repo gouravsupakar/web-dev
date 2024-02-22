@@ -1,0 +1,137 @@
+
+
+body {
+  color: #40514E;
+ margin:0px;
+ text-align: center;
+ font-family: 'Merriweather', serif;
+ 
+}
+
+
+h1 {
+    color: #66BFBF;
+    margin:50px auto 0 auto;
+    font-family: 'Sacramento', cursive;
+    font-size: 7.5rem;
+}
+
+h2{
+  color: #66BFBF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+h3{
+  font-family: 'Montserrat', sans-serif;
+  color:#11999E;
+}
+
+
+
+.topcontainer {
+  background-color: #E9F8F9;
+  position:relative;
+  padding-top:100px;
+  margin-bottom: 20px;
+}
+
+.middle-container {
+  padding-bottom: 20px;
+
+}
+
+.bottom-container {
+       padding-top: 30px;
+       background-color: #66BFBF;
+       height:150px;
+      
+}
+
+
+.top-cloud{
+  position:relative;
+  left: 230px;
+}
+
+.bottom-cloud{
+  position: absolute;
+  left:250px;
+}
+
+.skill-row{
+  width:50%;
+  margin:100px auto 100px auto;
+  text-align: left;
+  line-height: 2;
+
+}
+
+
+.skill-img1{
+  width:25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.skill-img2{
+  width:25%;
+  float: right;
+  margin-left: 30px;
+}
+
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 60px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 26px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+
+.footer-link{
+  color:#11999E;
+  padding-right: 20px;
+  position: relative;
+  top:20px;
+}
+
+.grv{
+  color:#EAF6F6;
+  margin-top: 50px;
+}
+
+hr {
+  border-style: none;                       
+  border-top-style:dotted;                  
+  border-width:10px;                         
+  border-color: #AEBDCA;                     
+  width: 10%; 
+  margin:50px auto 50px auto;
+} 
+
+p{
+  line-height: 2;
+}
+

@@ -1,0 +1,79 @@
+/*this is the comment tag in css */
+
+body {
+    background-color: #EBFFFA;               /*With this we can set backgroud color to the html file*/
+      
+}
+
+hr {
+    border-style: none;                       /*With this we set border style as none*/
+    border-top-style:dotted;                  /*With this we can specify to set top of the border as dotted*/
+    border-width:5px;                         /*With this tag we can set the border width in pixle*/
+    border-color: grey;                     /*With this we can set border color as we want it to be*/
+    width: 5%;                                /*With this tag we can set the with of the horizantal line 
+                             as the percentage of the total page or we can also set an absolute number in pixle */
+ }
+
+ h1 {
+   color:#151965;                          /*This tag changes the color as mentioned*/
+   font-family: "Times New Roman", Times, serif; /*This tag changes the text style to the mention text style as pe css codes*/
+   text-decoration-line: underline;           /* With this we can underline the text in html file*/
+ }
+
+ #heading {                              /*inside this heading id we have different css style to make the h1 tag more attractive*/
+   font-size: 72px;
+   background:linear-gradient(           /*the linear gradient gives a mix of different colors  to give a smooth transitions between the different colors.*/
+      270deg, #3f5efb, #fc466b );
+   -webkit-background-clip: text;       /*The background-clip CSS property sets whether an element's background extends underneath its border box, padding box, or content box.*/
+   -webkit-text-fill-color: transparent; /*the text fill color css property fills the text with mentioned color in this case the text is made transparent to show the linear gradient function of the background*/
+ }
+
+ h3 {
+    color:#151965;
+    font-family: "Monaco", monospace;
+    text-decoration-line: underline;           /*this tag underline the specifed area*/
+ }
+
+ th{
+    background-color: #ecc8f5;               /*this tag helps us change the background color*/
+ }
+
+
+ /********************         class selector              *********************/
+
+/*this class selector helps apply css style to individual elements of the code*/
+
+ .tr1:hover{
+   color:darksalmon;
+ }
+
+.tr2:hover{
+   color: darksalmon;
+ }
+
+.tr3:hover{
+   color: darksalmon;
+ }
+
+.tr4:hover{
+   color: darksalmon;
+ }
+
+.tr5:hover{
+   color: darksalmon;
+ }
+
+.tr6:hover{
+   color: darksalmon;
+ }
+
+
+
+
+
+
+
+
+
+
+

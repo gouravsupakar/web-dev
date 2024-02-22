@@ -1,0 +1,17 @@
+{
+  "name": "httprequestmodule",
+  "version": "1.0.0",
+  "description": "learning how http requests works",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "gourav",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "path": "^0.12.7",
+    "url": "^0.11.1"
+  }
+}

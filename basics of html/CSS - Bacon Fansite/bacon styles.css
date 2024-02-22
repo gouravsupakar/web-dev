@@ -1,0 +1,65 @@
+/********************** tag selector **********************/
+  
+    
+ #heading {                              /*inside this heading id we have different css style to make the h1 tag more attractive*/
+    font-size: 72px;
+    background:linear-gradient(           /*the linear gradient gives a mix of different colors  to give a smooth transitions between the different colors.*/
+       270deg, #3f5efb, #fc466b
+    );
+    -webkit-background-clip: text;       /*The background-clip CSS property sets whether an element's background extends underneath its border box, padding box, or content box.*/
+   
+    -webkit-text-fill-color: transparent; /*the text fill color css property fills the text with mentioned color in this case the text is made transparent to show the linear gradient function of the background*/
+  }
+                      /*in css a tag selector is used just by the tag name example givem below.*/
+    
+
+img:hover {/* A pseudo class is denoted by (:) in front .A pseudo denotes a special state of selected items.*/
+    background-color: gold;
+}
+
+
+
+  /******************* class selector ***************/
+.bacon{       /* for a class selector we use a dot (.) before the name of the calss mentioned */                       
+    /* this is how we select a particular element by specifying its class*/
+    background-color: green;
+}
+
+.broccoli{
+    background-color: red;
+}
+/*a html element cam have multiple class but it cannot have multiple id.   Broccoli and circular are different class of same element that is the img of broccoli */
+.circular{   
+    border-radius: 100%;
+}
+
+/************************** id selector *********************************/
+                    /*this is a id selector it is used to apply specific style to a specific element*/
+                    /* there is only one difference between class and an id that is 
+                       class of multiple elements can have a same name but id of multiple elements cannoty have the same name.
+                       if the id of different elements are same then there will we a error message popping up*/
+
+
+#heading{           /* for id we use the hastag (#) sign before the name of the class*/ 
+    color:gold;
+}
+
+.bacon{
+    position: relative;   /*this the position property in css through wich we can change the position of the html element.
+                              common position values are - static (this a default value of the html elements)
+                                                           relative
+                                                           absolute
+                                                           fixed*/
+         /*by itself the position property of css does not do anything, we then have to use the coordinate poperty to bring about any visible changes.*/                                                  
+    left : 30px;  /*this tells the code to position the image by giving space of 30pixles to the left*/
+}
+
+.broccoli{
+    position: relative;
+    left: 30px; /*this is the coordinate porperty of css. There are 4 values of the coordinate property
+                                                            1)top
+                                                            2)bottom
+                                                            3)left
+                                                            4)right */
+}
+

@@ -1,0 +1,218 @@
+
+body{
+    font-family: Montserrat;
+}
+
+#title{
+    background-color: #ff4c68;
+    color:#fff;
+}
+
+.container-fluid{
+    padding: 3% 15% 1%;
+}
+
+h1{
+    font-family: "Montserrat, sans-serif;";
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: 900;
+}
+
+/* navigation-bar */
+
+.navbar{
+    padding:0 0 4.5rem;
+}
+
+.navbar-brand{
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item{
+    padding:0 18px ;
+}
+
+.nav-link{
+    font-family: "Montserrat-Light";
+    font-size: 1.2rem;
+
+}
+
+
+/* download-button */
+
+.download-button{
+    margin: 5% 3% 5% 0;
+}
+
+
+/* title-img */
+
+.title-img{
+    width: 60%;
+    transform: rotate(25deg);
+    position: relative; /* to make the image behind the feature section.*/
+    top: 120px;
+    left:20%
+        
+}
+
+
+/* features-section */
+
+
+#features{
+    padding: 10% 15% 7%;
+    background-color: #fff;
+    position: relative; /*the position element is used to use the z-index move the fedatures page on the top towards the user.*/
+    z-index: 1;
+}
+
+.feature-box{
+    padding: 5%;
+    text-align: center;
+}
+
+
+.feature-icon{
+    color: #ef8172;
+    
+}
+
+.feature-h3{
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-top: 30px;
+
+}
+
+.feature-p{
+    line-height: 2;
+    color: #afafaf;
+}
+
+
+.feature-icon:hover{
+    color: #ff4c68;
+}
+
+
+
+
+/* testimonials */
+
+#testimonials{
+    text-align: center;
+    background-color: #ef8172;
+}
+
+#testimonials{
+    color: #fff;
+    font-family: "Montserrat-Bold";
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+em{
+    display: block;
+}
+
+.testimonials-img{
+    padding: 2% 0 2% 0;
+    width: 25%;
+    border-radius: 100%;
+}
+
+.carousel-item{
+    padding: 7% 15%;
+}
+
+/* press-section */
+
+#press{
+    background-color: #ef8172;
+    text-align: center;
+    padding: 3%;
+}
+
+.press-logo{
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+/* pricing-section */
+
+#pricing h2{
+    font-weight: bold ;
+}
+
+#pricing{
+    text-align: center;
+    padding: 100px;
+}
+
+.card-header h3{
+    font-weight: 900;
+}
+
+.card-body h2{
+    font-weight: 600;
+}
+
+.pricing-col{
+    padding-top: 25px;
+}
+
+.last-card{
+    line-height: 0.9;
+}
+
+
+/* media query breakpoints */ /*when the width of the screen is 991px text align should be center and image position should chamge to normal.*/
+
+@media (max-width:991px){
+
+    #title{
+        text-align: center;
+    }
+
+    .title-img{
+        position:static;
+        transform: rotate(0);
+    }
+
+}
+
+
+/* call to action */
+
+#cta{
+    background-color: #ff4c68;
+    text-align: center;
+    padding: 13% 15%;
+}
+
+.cta-text{
+
+    font-family: "Montserrat Black";
+    color: #fff;
+    font-weight: bolder;
+    font-size: 3rem;
+    padding:  40px  50px;
+
+}
+
+
+#footer{
+    text-align: center;
+    padding: 7% 30%;
+}
+
+.footer-logo{
+    padding: 10px ;
+}

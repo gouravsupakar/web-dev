@@ -1,0 +1,14 @@
+
+body{
+    background-color: #212121;
+}
+
+.container{
+    background-color: aqua;
+    position: absolute;
+    left: 500px;
+    top: 200px;
+    border: solid;
+    border-width: thick;
+    border-color: black;
+}

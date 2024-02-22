@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeStamp</title>
+</head>
+<body>
+    <div id="container">
+        <p id="para">TimeStamp: </p>
+        <!-- <span id="time">-</span> -->
+    </div>
+</body>
+<script>
+    const div = document.getElementById('container');
+    const p = document.getElementById('para');
+    const span = document.createElement('span');
+    span.id = 'time';
+    span.innerHTML = '-';
+   
+    p.innerHTML = `TimeStamp: `;
+    p.append(span);
+    
+    // function getTime(event){
+    //     // const time = document.getElementById("time");
+    //     span.innerHTML = event.timeStamp;
+    //     console.log( span.firstChild)
+    // }
+
+    // document.body.addEventListener('keypress', getTime);
+
+    //  or
+
+    document.body.addEventListener('keypress', (event)=>{
+        // const time = document.getElementById("time");
+        span.innerHTML = event.timeStamp;
+        console.log( span.firstChild)
+    });
+
+    console.log(p.firstChild);
+    console.log(p.firstChild.nodeValue);
+    console.log(span.firstChild);
+
+   
+    
+</script>
+</html>

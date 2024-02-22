@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>type </title>
+</head>
+<body>
+    <div id="container">
+        <p>Press any key or the mouse button to lopg event type.</p>
+        <p id="log"></p>
+    </div>
+</body>
+<script>
+    const log = document.getElementById('log');
+
+    // mouse event
+    document.addEventListener('click', (event) => {
+        log.innerText = `${event.type} \n ${log.innerText}`;
+    }, false);
+
+
+    document.addEventListener('mousedown', (event) => {
+        log.innerText = `${event.type} \n ${log.innerText}`;
+    }, false);
+
+
+    document.addEventListener('mouseup', (event) => {
+        log.innerText = `${event.type} \n ${log.innerText}`;
+    }, false);
+
+
+    // keyboard event
+
+    document.addEventListener('keypress', (event) => {
+        log.innerText = `${event.type} \n ${log.innerText}`;
+    }, false);
+
+
+    document.addEventListener('keyup', (event) => {
+        log.innerText = `${event.type} \n ${log.innerText}`;
+    }, false);
+
+
+    document.addEventListener('keydown', (event) => {
+        log.innerText = `${event.type} \n ${log.innerText}`;
+    }, false);
+
+</script>
+</html>

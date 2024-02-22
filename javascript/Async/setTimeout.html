@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code.</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    setTimeout(function(){
+        console.log("Hello world")
+    }, 2000);
+
+    const changeText = function (){
+        document.querySelector('h1').innerText = "Hello welcome to the javascript course";
+    };
+
+    const changingText = setTimeout(changeText , 4000);
+
+
+
+    const p = document.createElement('p');
+    
+   
+    function para(){
+        p.innerHTML = 'This is a para tag';
+        document.body.appendChild(p);
+    };
+
+   const ptag =  setTimeout(para , 3000);
+
+    // now to stop the setTimeout function ther is clearTimeout function which takes in the reference of which setTimeout to clear;
+
+    // clearTimeout(changingText);
+
+    // or by this way
+
+
+    document.getElementById('stop').addEventListener('click', () =>{
+        clearTimeout(ptag);
+        console.log('Stopped');
+    });
+
+
+
+
+</script>
+</html>

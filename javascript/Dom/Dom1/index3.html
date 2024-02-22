@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom manipulation</title>
+</head>
+<body style="background-color: #212121; color: #ffff">
+    
+
+    <script>
+        const div = document.createElement('div');
+        console.log(div);
+        //seting className
+        div.className = "container";
+        div.id = "box-container"
+        div.title = "box";
+        //set attribute without overwriting
+
+        div.setAttribute("class", "bg-black");
+        div.style.backgroundColor = "orange";
+        div.style.padding = "10px";
+        div.innerText = "Dom Manipulation ";  
+        /* or */  
+        //First create a text node and append it to the div.
+        const addText = document.createTextNode(" Chai aur Code"); // this is a better approach than using .innerText to add text . This approach does not overWrite the existing text it just sets the prioerty.
+        // Adding the text to the div 
+        div.appendChild(addText);
+
+        //Adding the div to the body of Html file
+        document.body.appendChild(div);
+        
+
+    </script>
+</body>
+</html>

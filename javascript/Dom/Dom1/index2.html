@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom manipulation</title>
+</head>
+<body style="background-color: #212121; color: #ffff">
+    <div class="parent">
+        <span>what a lovely day to learn coding.</span>
+        <!-- this is comment -->
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thrusday</div>
+        <div class="day">Friday</div>
+    </div>
+</body>
+
+
+
+<script>   //using internal java script just form conveinence
+  
+  const parent = document.querySelector('.parent');
+  console.log(parent); // this will get you the parent node
+  console.log(parent.children); // this property helps you to get to the children of the parent node
+  console.log(parent.children[0].innerHTML);  //accessing the elements inner html of the HTML collection
+
+// we cant use forEach loop but we can use simple for loop to go through the elements od=f the HTMLCollection
+
+for (var i=0; i<parent.children.length; i++){
+    console.log(parent.children[i].innerHTML);
+    parent.children[i].style.fontSize = "5rem";
+}
+
+parent.children[1].style.color = "green";
+
+// how to traverse the Dom tree
+
+console.log(parent.firstElementChild); // this will get you the first child of the parent node
+
+console.log(parent.lastElementChild); // this will get you the last child of the parent node
+
+parent.firstElementChild.style.color = "yellow";
+
+// Optimal way to select children or parent   ans-: we should not always use querySelectorAll() or any other such
+// this way the entire Dom tree have to be traversed again again which is not efficient.
+
+// to traverse efficiently we will use parent children relationship 
+
+const monday = document.querySelector('.day');  //this will give us the first element with the class name  day.
+
+// to go to tuesday
+console.log(monday.nextElementSibling.innerHTML);
+
+// to go to the parent node
+
+console.log(monday.parentElement); /*or*/  console.log(monday.parentNode);
+
+
+//important
+
+console.log("NODES: ", parent.childNodes);  // this will give us the complex Tree structure  or child Nodes which
+//includes everything like the div line break new elements the text inside a H1 or nay other HTML tag
+//if a statemet is written in the new line the shifting of line from one line to another is also considered even the comments also.
+
+
+
+
+</script>
+
+
+</html>

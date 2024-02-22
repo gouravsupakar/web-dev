@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur Javascript.</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+</body>
+<script>
+    const sayDate = function(str){
+        console.log(str,  Date.now());
+    }
+  // setInterval keeps on repeating a task which is passed in as a function with a timeout interval you can also pass values as third parameter which can be string numbers anything
+
+    let intervalId ;   // maket it a global variable
+
+
+     var startText =  function (){
+        intervalId = setInterval(sayDate , 1000 , "Hi Gourav");    // setInterval takes in 3 parameters 1> function, 2nd> time interval in seconds, 3rd> It passes the value of the variable passed in the 1st parametre
+     };
+
+   document.getElementById('start').addEventListener('click', startText);
+
+    document.getElementById('stop').addEventListener('click', ()=>{
+        clearInterval(intervalId);
+    })
+</script>
+</html>

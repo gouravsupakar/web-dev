@@ -1,0 +1,22 @@
+
+body {
+    background-color: #40514E;
+   margin:0px;
+   text-align: center;
+   font-family: 'Merriweather', serif;
+   
+  }
+
+.container{
+    background-color: bisque;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+  }
+
+
+
+.huge{
+    font-size: 10rem;
+}
+

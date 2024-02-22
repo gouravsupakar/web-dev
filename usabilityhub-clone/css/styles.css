@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* reset class */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    color: var(--primary-text-color);
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.2rem;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+/* utility class */
+
+
+.container-fluid{
+    padding: 1% 5% 1%;
+}
+
+.small-bold-text{
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.hover-link{
+    color: var(--primary-text-color);
+}
+
+.hover-link:hover{
+    color: var(--accent-color);
+}
+
+.secondary-button{
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    color: var(--primary-text-color) !important ;
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+}
+
+.secondary-button:hover{
+    border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+}
+
+
+@media (max-width:1140px){
+    header{
+        text-align: center;
+    }
+
+    .header-img{
+        width:150%;
+    }
+
+    .header-text{
+        padding-top: 10px;
+    }
+
+
+}
+
+/* top banner */
+
+.top-banner{
+    background-color: #e74694;
+    background-image: url("/usabilityhub-clone/assets/bg-img.png");   /*to set the background image on the top banner*/
+    background-size: 300px;                                           /*to make the background image repeat itself throughout the length*/
+}
+
+/* title section (nav bar section)*/
+
+.brand-img{
+    width: 150px;
+}
+
+.title{
+    padding: 10px 70px;
+}
+
+.sign-up-button{
+    margin-left: 15px;
+}
+
+.sign-in-button{
+    color: var(--primary-text-color);
+}
+
+.navigation-text{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.nav-item{
+    padding: 0 4px;
+}
+
+.navbar{
+    padding: 0 0 5.5rem;
+}
+
+/*title scection (header section) */
+
+/* get started button */
+
+.getstarted-button{
+    margin: 1% 2% 1%;
+}
+
+header{
+    padding-left: 10px;
+    padding-right: 50px;
+}
+
+.header-img{
+    width: 100%;
+    padding: 20px 2% 2% 5%;
+    
+}
+
+.header-text{
+    padding: 60px 2% 20px;
+}
+
+
+
+
+/* companies section */
+
+.companies-section{
+    padding: 30px 80px;
+    
+}
+
+.company-text{
+    text-align: center;
+    padding: 20px 0 20px;
+}
+
+.logos{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap row; 
+    align-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+
+.companies-img{
+    max-height: 50px;
+    max-width: 100%;
+    border: 0;
+    vertical-align: middle;
+    display: inline-block
+}
+
+/* features section */
+
+.features-section{
+
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 60px var(--padding-inline-section) 10px;
+    text-align: center;
+    background-image: url(/usabilityhub-clone/assets/asset\ 34.svg);  /* to set the image in the background we use background-img property .*/
+    background-repeat: no-repeat;  /* after setting background-img property the image will repeat itself so we use background-repeat: no-repeat*/
+    background-position: center;  /*we can use background-position property to position the background image.*/
+    background-size: 800px;
+}
+
+@media (max-width: 800px){       /* to remove the background image when the screen gets small*/
+    .features-section{
+        background-image: none;
+    }
+}
+
+.features-text{
+    text-align: center;
+}
+
+.features-text h2{
+    margin-bottom: 30px;
+}
+
+.features-button{
+    margin-bottom: 30px;
+}
+
+.features-logos{
+    padding: 10px 20px;
+}
+
+.flogo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    
+}
+
+.flogo img{
+    width: 40px;
+    margin-bottom: 15px;
+}
+
+.flogo h3{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* big feature section */
+
+  /* big-feature 1 section */
+
+.big-features1-section{
+    margin: 20px 50px;
+    padding: 30px var(--padding-inline-section) 0;
+
+    
+}
+
+.big-feature1{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+    flex-flow: wrap row;
+    gap: 30px;
+
+}
+
+.feature-img{
+    width: 500px;
+}
+
+.big-feature-text{
+    width: 50%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.big-feature-text h3{
+     font-size: 1.2rem;
+     font-weight: 600;
+     padding-bottom: 5px;
+}
+
+.big-feature-text h2{
+    font-weight: 700;
+}
+
+.big-feature-text p{
+    font-size: 1rem;
+}
+
+.person-name{
+    display: inline-block;
+    margin-left: 5px;
+    padding-top: 10px;
+}
+
+.small-img1{
+    width: 150px;
+    padding-bottom: 5px;
+}
+
+.small-img2{
+    width: 60px;
+    margin-bottom: 22px;
+}
+
+
+/* big feature 2 section */
+
+.big-features2-section{
+    margin: 20px 50px;
+    padding: 30px var(--padding-inline-section) 0; 
+}
+
+.big-feature2{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+    flex-flow: wrap row;
+    gap: 30px;
+    flex-direction: row-reverse;
+}
+
+
+/* big feature 3 section */
+
+.big-features3-section{
+    margin: 20px 50px;
+    padding: 30px var(--padding-inline-section) 0; 
+}
+
+
+
+/* example section*/
+
+.example-section{
+    padding: 30px var(--padding-inline-section) 0;
+    margin-bottom: 50px;
+}
+
+.example-header{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.example-header h2{
+    margin-bottom: 20px;
+}
+
+/* img section */
+
+.example-img-sec{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap row; 
+    align-content: center;
+    
+}
+
+.example{
+    text-align: left;
+    width: 270px;
+    min-height: 200px;
+    padding-top: 200px;
+    margin: 10px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.exa1{
+    background: black;
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)),  url(/usabilityhub-clone/assets/asset\ 36.jpeg) ;
+    
+}
+
+.exa2{
+    background: black;
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(/usabilityhub-clone/assets/asset\ 37.jpeg);
+}
+
+.exa3{
+    background: black;
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(/usabilityhub-clone/assets/asset\ 38.jpeg);
+}
+
+.exa4{
+    background: black;
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)),  url(/usabilityhub-clone/assets/asset\ 39.jpeg);
+}
+
+.exa2 h2{
+    padding-top: 40px;
+}
+
+.exa3 h2{
+    padding-top: 40px;
+}
+
+.exa4 h2{
+    padding-top: 40px;
+}
+
+
+/* cta section  */
+
+.cta-section{
+    background-color: #183b54;
+    color: #ffffff;
+    padding: 30px var(--padding-inline-section);
+    margin-bottom: 10px;
+}
+
+.cta-img img{
+    width: 500px;
+}
+
+.ctap-container{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+    flex-flow: wrap row;
+    flex-direction: row-reverse;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.cta-text{
+    width: 50%;
+    align-items: flex-start;
+}
+
+.cta-text p{
+    width: 300px;
+}
+
+/* testing today */
+
+.testing{
+    text-align: center;
+    padding: 100px 120px;
+}
+
+
+/* footer section */
+
+.footer-container{
+    padding-block: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #ebf2fa;
+    flex-flow: wrap row;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+    
+}
+
+.link-column{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 40px 80px;
+}
+
+.company-logo{
+    width: 200px;
+    margin-top: 30px;
+}
+
+@media(max-width:880px){
+    footer{
+        text-align: center;
+    }
+}
+
+/* sub-footer section */
+
+.sub-footer{
+    text-align: center;
+    padding: 10px 10px;
+    background-color: #b9cde4;
+    margin-right: 0;
+}
+
+.cta-link a{
+    padding: 5px 15px;
+    
+}
+
+.social-logo a{
+    padding: 5px 15px;
+}
+
+
+
